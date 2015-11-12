@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     
-    <title>Cybersecurity and honeypots</title>
+    <title>EphemeCh Position paper</title>
     
     <meta name="description" content="Cybersecurity and honeypots: experience in a scientific network infrastructure">
     <meta name="author" content="Framework: Hakim el Hatab, preso: JJ Merelo, rest: @geneura">
@@ -58,123 +58,11 @@
 	</section>
 	
 <!-- Start slides -->
-				
-<section>
-  <section data-background='https://farm3.staticflickr.com/2304/2794032451_cd65a9c373_b_d.jpg'>
-    <h1 class='bkg'>Meet multi-vector advanced persistent
-      threats: <code>APT</code></h1>
-    
-    <aside class='notes'><blockquote>One of the greatest dangers for IT infrastructures of
-	governments, public administrations and companies
-	are APT. A cyber threat is persistent if it is contin-
-	uous in time and establishes monitoring and control
-	mechanisms with a hostile agent. It is defined as ad-
-	vanced if it uses mechanisms in order to hide its ac-
-	tivity in the system. Usually, APT are related with cy-
-	berspying and elite groups of cybercrime and they are
-	attacks directed against a specific infrastructure. For
-	this reason, it is a priority to
-	detect and study
-	them.</blockquote>
-  </section>
-
-  <section>
-    <h1>Compromised computers used for</h1>
-      <h2 class='fragment'>Litecoin mining</h2>
-      <h2 class='fragment'>Proxy for other intrusions</h2>
-      <h2 class='fragment'>Denial of service attacks</h2>
-
-  </section>
-
-  <section data-background='https://farm9.staticflickr.com/8724/17136329699_8c5c5c759c_b_d.jpg'>
-    <h2 class='bkg'>Looking for a new way to detect APTs</h2>
-    <h1 class='fragment bkg'>Automatically</h1>
-
-    <aside class='notes'>Automatic classification allows to check the
-    changing nature of attacks and how hey are moving to one type of
-    attack to another in the honeypot. Then a response can be mounted
-      against them.</aside>
-    </section>
-</section>
-
-<section>
-  <section data-background='https://farm8.staticflickr.com/7177/6998398233_451267146c_z_d.jpg'>
-    <h1 class='bkg'>A <em>honeypot</em> is
-      a <em>exposed</em> computer that
-      records intrusion activities</h1> 
-  </section>
-
-  <section><h1>Honeypots are</h1>
-    <h2 class='fragment'>Non-intrusive</h2>
-    <h2 class='fragment'>Low use of resources.</h2>
-    <h2 class='fragment'>Able to analyze threats in action</h2>
-  </section>
-</section>
-
-<section data-background='https://upload.wikimedia.org/wikipedia/commons/7/7d/CSIRO_ScienceImage_1766_Venus_Fly_Trap.jpg'>
-  <h1 class='bkg'>Using <em>Dionaea</em>
-    and <code>Kippo</code></h1>
-</section>
-
-<section>
-  <img src='https://raw.githubusercontent.com/mfontani/kippo-stats/master/kippo-home2.png'
-       alt='kippo stats'>
-  <p>Stats
-    from <a href='https://github.com/mfontani/kippo-stats'>Kippo-stats</a></p>
-</section>
-
-
-<section>
-  <h3>Sorting by self-organizing maps.</h3>
-  <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Somtraining.svg/1000px-Somtraining.svg.png'
-  alt='SOM training'>
-  <aside class='notes'>The use of cells in a SOM reflects the
-  probability density of the original search space, thus making
-    possible to see the variability, similarity and also abundance of attacks.</aside>
-</section>
-
-<section>
-  <h2>Data for training</h2>
-  <h1 class='fragment'>Input and output port</h1>
-  <h1 class='fragment'>Protocol</h1>
-</section>
-
-<!-- Results -->
-
-<section>
-
-  <section>
-    <h1>Using <em>U-Matrix</em> for detection of clusters</h1>
-    <h2 class='fragment'>Measures distances between contiguous SOM vectors.</h2>
-  </section>
-
-  <section>
-    <img src='images/HonepypotData1.jpg' alt='SOM data 1'>
-  </section>
-
-   <section>
-    <img src='images/HoneypotData2.jpg' alt='SOM data 2'>
-  </section>
-
-   <section>
-    <img src='images/HoneypotData3.jpg' alt='SOM data 3'>
-  </section>
-
-   <section>
-     <img src='images/HoneypotData4.jpg' alt='SOM data 4'>
-   </section>
-   
-   <section>
-     <img src='images/HoneypotData5.jpg' alt='SOM data 5'>
-  </section>
-
-</section>
-
 
 <section style="text-align: left;">
   <img  src='images/by-sa.png' alt='cc-by-sa'>
   <h1>Thanks!</h1>
-
+  
 </section>
 
 
@@ -182,23 +70,6 @@
   <h2>Credits</h2>
   <ul>
     
-    <li><a href='https://www.flickr.com/photos/lollyknit/2060384605/'>Honeypots</a> by  LollyKnit</li>
-    <li><a href='https://www.flickr.com/photos/carbonnyc/6998398233/'>Traps
-	by Goehring</a>
-    <li><a href="https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_1766_Venus_Fly_Trap.jpg#/media/File:CSIRO_ScienceImage_1766_Venus_Fly_Trap.jpg">CSIRO
-	ScienceImage 1766 Venus Fly Trap</a> by CSIRO. Licensed
-      under <a title="Creative Commons Attribution 3.0"  href="http://creativecommons.org/licenses/by/3.0">CC
-	BY 3.0</a>
-      via <a href="//commons.wikimedia.org/wiki/">Wikimedia
-	Commons</a>.</li>
-    <li><a href='https://www.flickr.com/photos/atelier_tee/2794032451/'>Elks
-	memorial by Terence
-	Faircloth</a></li>
-    
-    <li><a href='https://www.flickr.com/photos/wenzday01/17136329699/'>Leopard
-	by Wendy</a></li>
-
-    <li><a href="https://commons.wikimedia.org/wiki/File:Somtraining.svg#/media/File:Somtraining.svg">Somtraining</a> by <a href="//commons.wikimedia.org/wiki/User:Mcld" title="User:Mcld">Mcld</a> - <span class="int-own-work" lang="en">Own work</span>. Licensed under <a title="Creative Commons Attribution-Share Alike 3.0" href="http://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a> via <a href="https://commons.wikimedia.org/wiki/">Commons</a>.</li>
   </ul>
   
 			</div>
